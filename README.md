@@ -54,3 +54,66 @@ Both the **Telegram bot** and **Frontend dashboard** retrieve real-time data thr
 ### Sensors → Controller
 - MQTT Topic: `labs/<lab_id>/sensors/<sensor_id>/state`
 - Payload:
+
+### Controller → Actuators
+- MQTT Topic: `labs/<lab_id>/actuators/<actuator_id>/cmd`
+- Payload:
+
+### Actuator Feedback → Controller
+- MQTT Topic: `labs/<lab_id>/actuators/<actuator_id>/state`
+- Payload:
+
+---
+
+## Control Logic
+
+- Each laboratory has configurable thresholds defined in `catalog/thresholds.json`.
+- Hysteresis is applied to prevent rapid ON/OFF switching.
+- `off_delay_sec` enforces a minimum OFF duration between cycles.
+- Fan turns ON if temperature OR humidity exceeds high thresholds.
+- Fan turns OFF only when BOTH fall below low thresholds.
+- Heater, humidifier, and dehumidifier follow similar hysteresis rules.
+
+---
+
+## Repository Structure
+
+
+- Dashboard: http://localhost
+- Registry API: http://localhost:8080/status
+
+---
+
+## Environment Variables
+
+- TELEGRAM_BOT_TOKEN
+- REGISTRY_API_URL
+- PERMISSIONS_PATH
+- THINGSPEAK_KEYS_PATH
+- THINGSPEAK_POLL_SEC
+- CONTROL_LOOP_SEC
+- SIM_LOOP_SEC
+
+---
+
+## Permissions
+
+Telegram access is controlled by:
+`catalog/permissions.json`
+
+Add your chat ID to `owners` or `operators` and restart the telegram_bot container.
+
+---
+
+## Notes
+
+- JSON files are the single source of truth.
+- No database is used.
+- The controller holds all live state.
+- The registry exposes aggregated data via `/status`.
+
+---
+
+## License & Conduct
+
+This project follows the repository Code of Conduct and is intended for educational and laboratory use.
