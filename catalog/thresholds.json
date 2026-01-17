@@ -1,0 +1,29 @@
+{
+  "last_update": "2025-12-03 18:57:00",
+  "per_lab": {
+    "lab1": {
+      "t_high": 25,
+      "t_low": 20,
+      "h_high": 60,
+      "h_low": 30,
+      "off_delay_sec": 60,
+      "hysteresis": 2.0
+    },
+    "lab2": {
+      "t_high": 25,
+      "t_low": 20,
+      "h_high": 60,
+      "h_low": 30,
+      "off_delay_sec": 45,
+      "hysteresis": 2.0
+    },
+    "lab3": {
+      "t_high": 25,
+      "t_low": 20,
+      "h_high": 60,
+      "h_low": 30,
+      "off_delay_sec": 75,
+      "hysteresis": 2.5
+    }
+  }
+}
