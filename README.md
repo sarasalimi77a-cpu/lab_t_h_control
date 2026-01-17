@@ -49,4 +49,8 @@ Both the **Telegram bot** and **Frontend dashboard** retrieve real-time data thr
 
 ---
 
+## Data Flow
 
+### Sensors → Controller
+- MQTT Topic: `labs/<lab_id>/sensors/<sensor_id>/state`
+- Payload:
