@@ -1,0 +1,144 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #101418;
+  color: #f3f6fb;
+}
+
+body {
+  margin: 0;
+  padding: 0 1rem 3rem;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#status-indicator {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background-color: #5b6b79;
+}
+
+#status-indicator.ok {
+  background-color: #1b8a3f;
+}
+
+#status-indicator.error {
+  background-color: #a02b2b;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-left: 6px;
+}
+
+.badge.warn {
+  background: rgba(255, 170, 0, 0.2);
+  color: #ffda8a;
+  border: 1px solid rgba(255, 170, 0, 0.4);
+}
+
+.badge.danger {
+  background: rgba(255, 77, 77, 0.2);
+  color: #ffc0c0;
+  border: 1px solid rgba(255, 77, 77, 0.4);
+}
+
+.labs {
+  display: grid;
+  gap: 1rem;
+}
+
+.lab-card {
+  background: rgba(28, 34, 42, 0.9);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.lab-card header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.lab-card header p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #9fb3c8;
+}
+
+.lab-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.alert {
+  background-color: rgba(160, 43, 43, 0.2);
+  border: 1px solid rgba(160, 43, 43, 0.4);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  color: #ffbdbd;
+}
+
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grid li {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: rgba(15, 18, 24, 0.6);
+}
+
+.grid li.on {
+  border-color: rgba(53, 168, 87, 0.6);
+  background: rgba(25, 81, 58, 0.5);
+}
+
+.item-title {
+  display: block;
+  font-weight: 600;
+}
+
+.item-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: #92a1b4;
+}
+
+.item-value {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.item-meta {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #7a8895;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 0.5rem 2rem;
+  }
+}

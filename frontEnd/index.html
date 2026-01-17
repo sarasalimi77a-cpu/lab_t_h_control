@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Labs Temperature &amp; Humidity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>IoT Labs Temperature &amp; Humidity</h1>
+    <div id="status-indicator">Connecting…</div>
+  </header>
+  <main>
+    <section id="labs-container" class="labs"></section>
+  </main>
+  <footer>
+    <small>Data updates every 5 seconds from the local controller.</small>
+  </footer>
+  <script>
+    (function () {
+      var protocol = window.location.protocol;
+      var host = window.location.hostname;
+      var apiPort = "8080";
+      window.API_BASE = protocol + "//" + host + ":" + apiPort;
+    })();
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
