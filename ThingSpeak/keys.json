@@ -1,0 +1,82 @@
+{
+  "channels": [
+    {
+      "name": "channel1",
+      "api_key": "DQTSUH8RBEBVRFR2",
+      "fields": {
+        "field1": {
+          "sensor_id": "lab1_temp_1",
+          "metric": "t",
+          "api_key": ""
+        },
+        "field2": {
+          "sensor_id": "lab1_temp_2",
+          "metric": "t",
+          "api_key": ""
+        },
+        "field3": {
+          "sensor_id": "lab1_hum_1",
+          "metric": "h",
+          "api_key": ""
+        },
+        "field4": {
+          "sensor_id": "lab1_hum_2",
+          "metric": "h",
+          "api_key": ""
+        }
+      }
+    },
+    {
+      "name": "channel2",
+      "api_key": "9NBUPTS3XGGWRIMY",
+      "fields": {
+        "field1": {
+          "sensor_id": "lab2_temp_1",
+          "metric": "t",
+          "api_key": ""
+        },
+        "field2": {
+          "sensor_id": "lab2_temp_2",
+          "metric": "t",
+          "api_key": ""
+        },
+        "field3": {
+          "sensor_id": "lab2_hum_1",
+          "metric": "h",
+          "api_key": ""
+        },
+        "field4": {
+          "sensor_id": "lab2_hum_2",
+          "metric": "h",
+          "api_key": ""
+        }
+      }
+    },
+    {
+      "name": "channel3",
+      "api_key": "BMMDCOARAZNRPS05",
+      "fields": {
+        "field1": {
+          "sensor_id": "lab3_temp_1",
+          "metric": "t",
+          "api_key": ""
+        },
+        "field2": {
+          "sensor_id": "lab3_temp_2",
+          "metric": "t",
+          "api_key": ""
+        },
+        "field3": {
+          "sensor_id": "lab3_hum_1",
+          "metric": "h",
+          "api_key": ""
+        },
+        "field4": {
+          "sensor_id": "lab3_hum_2",
+          "metric": "h",
+          "api_key": ""
+        }
+      }
+    }
+  ]
+}
