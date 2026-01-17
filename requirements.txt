@@ -1,0 +1,4 @@
+CherryPy==18.9.0
+paho-mqtt==1.6.1
+requests>=2.31.0
+telepot==12.7
